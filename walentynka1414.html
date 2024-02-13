@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mati + vika = ❤️</title>
+  <style>
+    body {
+      background-color: #fce4ec; /* Lekki róż */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    #question {
+      font-size: 24px;
+      margin-top: 100px;
+    }
+    #buttons {
+      margin-top: 50px;
+    }
+    .button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 0 20px;
+      border: none;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    #yes {
+      background-color: #4caf50; /* Zielony */
+      color: white;
+    }
+    #no {
+      background-color: #f44336; /* Czerwony */
+      color: white;
+    }
+    #yes:hover, #no:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="question">Виктория Чумак, najlepsza dziewczyno na całym świecie, czy zostaniesz moją walentynką?</h1>
+
+<div id="buttons">
+  <button id="yes" class="button" onclick="showMessageAndRedirect()">Да мой малыш</button>
+  <button id="no" class="button" onclick="increaseButtonSize()">Нет((</button>
+</div>
+
+<script>
+  let greenButton = document.getElementById('yes');
+  let redButton = document.getElementById('no');
+  let greenButtonWidth = 150;
+  let greenButtonHeight = 60;
+
+  function showMessageAndRedirect() {
+    alert('Kocham cię nad życie moja walentynko - M.W');
+    window.location.href = 'https://youtu.be/AM0z80ZD0WA';
+  }
+
+  function increaseButtonSize() {
+    greenButtonWidth += 10;
+    greenButtonHeight += 5;
+    greenButton.style.width = greenButtonWidth + 'px';
+    greenButton.style.height = greenButtonHeight + 'px';
+  }
+</script>
+
+</body>
+</html>
